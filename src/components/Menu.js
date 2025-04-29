@@ -1,11 +1,15 @@
 import React from 'react';
-import '../styles/styles.css'
+import '../styles/styles.css';
 
 const Menu = ({ data }) => {
   return (
     <div className='container'>
       {data.map((item) => (
-        <div className='card' key={item.id}>
+        <div
+          className='card'
+          key={item.id}
+          data-test-id={`menu-item-${item.category}`}
+        >
           <div className='img'>
             <img src={item.img} alt={item.title} />
           </div>
