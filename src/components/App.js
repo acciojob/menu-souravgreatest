@@ -85,13 +85,13 @@ const App = () => {
     console.log(item);
   }
   return (
-    <div style={{display:'flex', flexDirection:"column", alignItems:"center"}}>
+    <div className='main' style={{display:'flex', flexDirection:"column", alignItems:"center"}}>
       <h1>Our Menu</h1>
-      <div className='timings'>
-        <button type='submit' className='#filter-btn' onClick={()=>setItem(data)}>All</button>
-        <button type='submit' className='#filter-btn-1' onClick={()=>solve("breakfast")}>Breakfast</button>
-        <button type='submit' className='#filter-btn-2' onClick={()=>solve("lunch")}>Lunch</button>
-        <button type='submit' className='#filter-btn-3' onClick={()=>solve("shakes")}>Shakes</button>
+      <div className='main'>
+        <button type='submit' className='main' onClick={()=>setItem(data)}>All</button>
+        <button type='submit' className='filter-btn-1' onClick={()=>solve("breakfast")}>Breakfast</button>
+        <button type='submit' className='filter-btn-2' onClick={()=>solve("lunch")}>Lunch</button>
+        <button type='submit' className='filter-btn-3' onClick={()=>solve("shakes")}>Shakes</button>
       </div>
       <Menu data={item}/>
     </div>
