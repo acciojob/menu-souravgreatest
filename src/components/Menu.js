@@ -7,7 +7,7 @@ const Menu = ({ data }) => {
       {data.map((item) => (
         <div className='card' key={item.id}>
           <div className='img'>
-            <img src='https://images.pexels.com/photos/5699519/pexels-photo-5699519.jpeg?auto=compress&cs=tinysrgb&w=600' alt={item.title} />
+            <img src={item.img} alt={item.title} />
           </div>
           <div className='details'>
             <div className='title'>
