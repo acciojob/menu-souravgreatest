@@ -1,0 +1,43 @@
+html,body{
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 100vh;
+    width: 90vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.card{
+    display: flex;
+    width: 40%
+}
+.details{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.title{
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 2px solid goldenrod;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.title>span:nth-child(2){
+    color: goldenrod;
+}
+.desc{
+    margin-top: 20px;
+}
+img{
+    height: 100px;
+    width: 150px;
+    border: 5px solid goldenrod;
+    border-radius: 2px;
+}
